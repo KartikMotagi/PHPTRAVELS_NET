@@ -1,0 +1,18 @@
+﻿[
+  {
+    "FROM": "Bangalore",
+    "TO": "New",
+
+    "T1FirstName": "John",
+    "T1LastName": "Kity",
+    "T1ID": "89897867",
+
+    "T2FirstName": "Sam",
+    "T2LastName": "Sam",
+    "T2ID": "78637237",
+
+    "T3FirstName": "Joy",
+    "T3LastName": "Roy",
+    "T3ID": "67938747"
+  }
+]
