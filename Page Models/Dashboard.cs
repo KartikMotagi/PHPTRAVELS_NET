@@ -32,7 +32,7 @@ namespace PHPTRAVELS_NET.Page_Models
 
         [FindsBy(How = How.XPath, Using = "//input[@type='search']")] IWebElement NEW_SEARCH;
 
-        [FindsBy(How = How.XPath, Using = "//button[text()='NEW']")] IWebElement NEW_SELECT;
+        [FindsBy(How = How.XPath, Using = "//button[text()='CJB']")] IWebElement NEW_SELECT;
 
         [FindsBy(How = How.Id, Using = "departure")] IWebElement Depart_Date;
 
@@ -195,7 +195,7 @@ namespace PHPTRAVELS_NET.Page_Models
             Traveller3_PassportID.SendKeys(ID);
             Thread.Sleep(3000);
 
-            ((IJavaScriptExecutor)driver).ExecuteScript("window.scrollBy(0,600);");
+            ((IJavaScriptExecutor)driver).ExecuteScript("window.scrollBy(0,800);");
             Thread.Sleep(3000);
 
             //Payment.Click();

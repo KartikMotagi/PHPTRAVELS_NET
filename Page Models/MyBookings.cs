@@ -20,7 +20,7 @@ namespace PHPTRAVELS_NET.Page_Models
 
         [FindsBy(How = How.XPath, Using = "(//a[@href='https://phptravels.net/bookings'])[2]")] IWebElement My_Booking_Menu;
 
-        [FindsBy(How = How.XPath, Using = "(//a[@class=\"btn btn-dark text-white d-flex justify-content-center align-items-center gap-2 waves-effect\"])[2]")] IWebElement Invoice;
+        [FindsBy(How = How.XPath, Using = "(//a[@target='_blank'])[1]")] IWebElement Invoice;
 
         [FindsBy(How = How.XPath, Using = "//strong[@class='m-0 text-dark text-uppercase']")] IWebElement Account;
 

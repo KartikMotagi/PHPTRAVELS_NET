@@ -1,6 +1,7 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
 using WebDriverManager.DriverConfigs.Impl;
+using WebDriverManager;
 
 namespace PHPTRAVELS_NET.Configuration_Files
 {
@@ -13,7 +14,7 @@ namespace PHPTRAVELS_NET.Configuration_Files
         public void Setup()
         {
             // Setup ChromeDriver using WebDriverManager
-            new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
+            new DriverManager().SetUpDriver(new ChromeConfig());
 
             // Create ChromeDriver instance
             driver = new ChromeDriver();
@@ -31,8 +32,7 @@ namespace PHPTRAVELS_NET.Configuration_Files
         [OneTimeTearDown]
         public void TearDown()
         {
-            // Quit the driver
-            driver.Quit();
+            driver.Dispose();
         }
     }
 }
